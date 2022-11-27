@@ -10,7 +10,6 @@ $(function () {
 	const checkedList = updateChecked();
 	let theList = "";
 	for (let i = 0; i < checkedList.length; i++) {
-	    console.log(checkedList[i]);
 	    theList = theList + checkedList[i];
 	    if (i < checkedList.length - 1)
 		theList = theList + ",";
