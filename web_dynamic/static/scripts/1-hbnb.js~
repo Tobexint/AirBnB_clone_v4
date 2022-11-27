@@ -1,0 +1,9 @@
+$(function () {
+    const checked = []
+    function updateChecked() {
+	$("input:checked").each(function () {
+	    checked.push(this.data-id);
+	})
+    }
+    $('input[type="checkbox"]').on("click", updateChecked())
+});
