@@ -16,7 +16,7 @@ $(function () {
 	}
 	$('div.amenities h4').text(theList);
     });
-    $.get('http://0.0.0.0:5001/api/v1/status/', function (data, stat) {
+    $.get('http://briancenter.tech/api/v1/status/', function (data, stat) {
 	if (data.status == "OK") {
 	    $("div#api_status").addClass("available");
 	}
